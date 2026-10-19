@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdullah Faiz — Accountant, Tax &amp; Finance Automation</title>
+<meta name="description" content="Accountant and finance professional with 3 years' experience in Australian bookkeeping, BAS and tax return preparation, plus AI-driven automation, dashboards and CRM builds. ACCA finalist. Available for remote work.">
+<meta property="og:title" content="Abdullah Faiz — Accountant, Tax & Finance Automation">
+<meta property="og:description" content="Clean books, compliant returns and automated finance workflows for Australian businesses and accounting firms.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f3d2e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f3d2e'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' text-anchor='middle' fill='%23f4efe6'%3EAF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf8f4; --surface:#ffffff; --ink:#16201b; --muted:#5d6a63; --line:#e6e1d6;
+  --accent:#0f3d2e; --accent-2:#b4893b; --accent-soft:#e8f0eb; --on-accent:#faf8f4;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1411; --surface:#151d19; --ink:#ece8df; --muted:#9aa89f; --line:#25312b;
+    --accent:#7fc4a2; --accent-2:#d4ad62; --accent-soft:#17251f; --on-accent:#0e1411;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1411; --surface:#151d19; --ink:#ece8df; --muted:#9aa89f; --line:#25312b;
+  --accent:#7fc4a2; --accent-2:#d4ad62; --accent-soft:#17251f; --on-accent:#0e1411;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.015em;line-height:1.15}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2);margin-bottom:14px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:var(--serif);font-size:19px;font-weight:600;text-decoration:none}
+.links{display:flex;gap:26px;align-items:center;font-size:14px}
+.links a{text-decoration:none;color:var(--muted);transition:color .15s}
+.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 14px var(--sans);padding:11px 20px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);color:var(--on-accent);text-decoration:none;cursor:pointer;transition:transform .15s,opacity .15s}
+.btn:hover{opacity:.9;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn.sm{padding:8px 16px}
+.links .btn:not(.ghost){color:var(--on-accent)}
+.links .btn.ghost{color:var(--ink)}
+
+/* hero */
+.hero{padding:96px 0 72px}
+.hero h1{font-size:clamp(40px,7vw,76px);max-width:15ch}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:60ch;margin:26px 0 34px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.avail{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);margin-bottom:28px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.dot{width:8px;height:8px;border-radius:50%;background:#2fa36b;box-shadow:0 0 0 0 rgba(47,163,107,.5);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(47,163,107,0)}100%{box-shadow:0 0 0 0 rgba(47,163,107,0)}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:30px 24px 30px 0}
+.stat+.stat{padding-left:24px;border-left:1px solid var(--line)}
+.stat b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(30px,4vw,44px);color:var(--accent);line-height:1}
+.stat span{display:block;margin-top:10px;font-size:13px;color:var(--muted)}
+
+section{padding:88px 0}
+section h2{font-size:clamp(30px,4.2vw,44px);max-width:22ch}
+.sub{color:var(--muted);max-width:62ch;margin-top:16px}
+.head{margin-bottom:48px}
+
+/* AI */
+.ai{background:var(--accent);color:var(--on-accent);border-radius:28px;padding:64px 56px;margin:0}
+.ai .eyebrow{color:var(--accent-2)}
+.ai .sub{color:color-mix(in srgb,var(--on-accent) 78%,transparent)}
+.ai-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:44px;background:color-mix(in srgb,var(--on-accent) 18%,transparent);border-radius:16px;overflow:hidden}
+.ai-item{background:var(--accent);padding:28px}
+.ai-item h3{font-size:21px;margin-bottom:8px}
+.ai-item p{font-size:15px;color:color-mix(in srgb,var(--on-accent) 78%,transparent)}
+.ai-item .n{font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--accent-2);margin-bottom:12px;display:block}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.card h3{font-size:20px;margin-bottom:10px}
+.card p{font-size:14.5px;color:var(--muted)}
+
+/* experience */
+.job{display:grid;grid-template-columns:200px 1fr;gap:32px;padding:34px 0;border-top:1px solid var(--line)}
+.job:last-child{border-bottom:1px solid var(--line)}
+.when{font-size:13px;color:var(--muted)}
+.when b{display:block;color:var(--ink);font-weight:500;font-size:14px;margin-bottom:2px}
+.job h3{font-size:23px}
+.org{color:var(--accent);font-size:14.5px;margin:4px 0 16px}
+.job ul{list-style:none;display:grid;gap:10px}
+.job li{position:relative;padding-left:20px;font-size:15px;color:var(--muted)}
+.job li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--accent-2)}
+
+/* expertise */
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:32px}
+.panel h3{font-size:21px;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:13px;padding:6px 13px;border-radius:999px;background:var(--accent-soft);color:var(--accent);border:1px solid transparent}
+.tag.o{background:transparent;border-color:var(--line);color:var(--muted)}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--surface)}
+.step{padding:26px 22px}
+.step+.step{border-left:1px solid var(--line)}
+.step .d{font-family:var(--serif);font-size:30px;color:var(--accent-2);line-height:1;margin-bottom:12px}
+.step p{font-size:14px;color:var(--muted)}
+.note{font-size:13.5px;color:var(--muted);margin-top:18px;max-width:70ch}
+
+/* credentials */
+.creds{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cred{padding:24px 0;border-top:1px solid var(--ink)}
+.cred b{display:block;font-family:var(--serif);font-weight:500;font-size:19px;margin-bottom:6px}
+.cred span{font-size:14px;color:var(--muted)}
+
+/* contact */
+.contact{text-align:center;padding:110px 0}
+.contact h2{margin:0 auto;max-width:18ch;font-size:clamp(34px,5.5vw,60px)}
+.contact .sub{margin:20px auto 34px}
+.contact .cta{justify-content:center}
+.meta{margin-top:30px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:center}
+.meta a{text-decoration:none;border-bottom:1px solid var(--line)}
+.meta a:hover{border-color:var(--ink);color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:50}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.dot{animation:none}html{scroll-behavior:auto}}
+
+@media (max-width:860px){
+  .links a:not(.btn){display:none}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .cards,.cols,.ai-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}.step+.step{border-left:0;border-top:1px solid var(--line)}
+  .creds{grid-template-columns:repeat(2,1fr)}
+  .job{grid-template-columns:1fr;gap:10px}
+  .ai{padding:40px 24px;border-radius:20px}
+  section{padding:64px 0}.hero{padding:64px 0 48px}
+}
+@media print{nav,.toast,.cta{display:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo">Abdullah Faiz</a>
+    <div class="links">
+      <a href="#ai">AI &amp; Automation</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#expertise">Expertise</a>
+      <button class="btn ghost sm" id="copyLink" type="button">Copy link</button>
+      <a class="btn sm" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+<header class="hero wrap">
+  <div class="avail rv"><span class="dot"></span> Available for remote engagements</div>
+  <h1 class="rv">Clean books. Compliant returns. <em>Smarter</em> finance.</h1>
+  <p class="lead rv">I'm an accountant with three years' experience supporting Australian businesses and accounting firms &mdash; from bookkeeping and payroll to BAS and tax return preparation &mdash; and I use AI to automate the repetitive work, build live dashboards and connect your CRM to your numbers.</p>
+  <div class="cta rv">
+    <a class="btn" href="#contact">Work with me</a>
+    <a class="btn ghost" href="#experience">See my experience</a>
+  </div>
+</header>
+
+<div class="wrap rv">
+  <div class="stats">
+    <div class="stat"><b>3 yrs</b><span>Accounting &amp; compliance for Australian clients</span></div>
+    <div class="stat"><b>60+</b><span>Client files managed across entity types</span></div>
+    <div class="stat"><b>95%+</b><span>Tax computation accuracy</span></div>
+    <div class="stat"><b>2&ndash;2.5%</b><span>Deviation on monthly financial summaries</span></div>
+  </div>
+</div>
+
+<section id="ai">
+  <div class="wrap">
+    <div class="ai rv">
+      <div class="eyebrow">What sets me apart</div>
+      <h2>Accounting expertise, multiplied by AI.</h2>
+      <p class="sub">I don't just use the software &mdash; I build the systems around it. AI tools, including Claude Code, help me remove manual work, catch errors earlier and give owners numbers they can act on.</p>
+      <div class="ai-grid">
+        <div class="ai-item"><span class="n">01</span><h3>AI in accounting &amp; finance</h3><p>AI-assisted transaction coding, reconciliation checks, variance commentary and reporting &mdash; faster turnaround with a human review on every output.</p></div>
+        <div class="ai-item"><span class="n">02</span><h3>CRM creation &amp; integration</h3><p>Setting up and connecting CRM and inventory platforms such as HubSpot and Cin7 so payments, stock and client activity flow into the ledger.</p></div>
+        <div class="ai-item"><span class="n">03</span><h3>Dashboards &amp; KPI reporting</h3><p>Management dashboards and KPI packs in Excel and Google Sheets that surface cost-reduction opportunities and show performance at a glance.</p></div>
+        <div class="ai-item"><span class="n">04</span><h3>Workflow automation</h3><p>Automating recurring finance tasks &mdash; data capture, bank and supplier rules, checklists, report generation &mdash; and documenting them as repeatable SOPs.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">Services</div>
+      <h2>Everything from onboarding to year-end.</h2>
+      <p class="sub">I work in your own software through my own login, supporting Australian accounting firms and directly engaged businesses.</p>
+    </div>
+    <div class="cards">
+      <div class="card rv"><h3>Bookkeeping &amp; reconciliations</h3><p>Monthly bank, credit card, supplier, debtor and balance sheet reconciliations in QuickBooks, Xero and MYOB.</p></div>
+      <div class="card rv"><h3>Payroll &amp; employee setup</h3><p>Pay runs, STP Phase 2, superannuation and PAYG reconciled to the ledger via Xero, Employment Hero and Deputy.</p></div>
+      <div class="card rv"><h3>BAS, IAS &amp; tax returns</h3><p>Activity statements and ITR, TTR and CTR returns prepared with full workpapers for the registered agent's review.</p></div>
+      <div class="card rv"><h3>Tax workings</h3><p>FBT, Division 7A, CGT, fuel tax credits, trust distributions, director's loans and Medicare levy.</p></div>
+      <div class="card rv"><h3>Clean-up &amp; catch-up</h3><p>Clearing months of unreconciled transactions, duplicates, suspense balances and GST miscoding.</p></div>
+      <div class="card rv"><h3>Reporting, cash flow &amp; automation</h3><p>P&amp;L and balance sheet commentary, cash flow forecasts, dashboards, financial models and AI-driven workflows.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="padding-top:24px">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">Experience</div>
+      <h2>Three years across the full compliance cycle.</h2>
+    </div>
+
+    <div class="job rv">
+      <div class="when"><b>May 2025 &ndash; May 2026</b>Faisalabad, Pakistan</div>
+      <div>
+        <h3>Tax Accountant</h3>
+        <div class="org">Premier Outsourcings SMC (Pvt) Ltd</div>
+        <ul>
+          <li>Built complete financial statements and books of accounts for Australian entities in MYOB, QuickBooks and Xero, including chart of accounts design.</li>
+          <li>Prepared quarterly BAS and IAS ahead of ATO deadlines, maintaining accurate statutory payment records.</li>
+          <li>Prepared individual, trust, partnership and company tax computations at 95%+ accuracy, applying FBT, superannuation, Medicare levy and fuel tax credit rules.</li>
+          <li>Managed asset acquisitions, disposals and depreciation schedules, keeping records audit-ready.</li>
+          <li>Reconciled bank and ledger data to filings to isolate discrepancies before lodgment, liaising directly with Australia-based partners.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job rv">
+      <div class="when"><b>Apr 2024 &ndash; Feb 2025</b>Australia / Pakistan</div>
+      <div>
+        <h3>Finance Officer</h3>
+        <div class="org">Opsteam Pvt Ltd (Australia) &middot; Avantduo Technology Services Pvt Ltd</div>
+        <ul>
+          <li>Ran bookkeeping, invoice processing and reconciliations for a 60+ entity portfolio in Xero, Dext, MYOB and Excel.</li>
+          <li>Produced monthly financial summaries within 2&ndash;2.5% deviation; variance analysis led to reduced operating expenses and happier clients.</li>
+          <li>Built financial dashboards and KPI reports giving leadership clear visibility of performance across the portfolio.</li>
+          <li>Processed weekly, fortnightly and monthly payroll for 60+ client employees, reducing payroll errors.</li>
+          <li>Integrated HubSpot, Cin7 and Coles Portal for payment tracking and inventory oversight; primary contact for client and leadership queries.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job rv">
+      <div class="when"><b>Feb 2024 &ndash; Apr 2024</b>Faisalabad, Pakistan</div>
+      <div>
+        <h3>Internal Auditor / Accountant</h3>
+        <div class="org">Anam Enterprises Pvt Ltd</div>
+        <ul>
+          <li>Maintained books under IFRS in Xero and produced weekly and month-end reports with statutory compliance analysis.</li>
+          <li>Assessed operational and payment controls against the 3Es framework (Economy, Efficiency, Effectiveness).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" style="padding-top:24px">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">Expertise</div>
+      <h2>Depth in compliance, range in finance.</h2>
+    </div>
+    <div class="cols">
+      <div class="panel rv"><h3>Software &amp; tools</h3>
+        <div class="tags">
+          <span class="tag">QuickBooks ProAdvisor</span><span class="tag">Xero certified</span><span class="tag">MYOB</span>
+          <span class="tag o">Dext</span><span class="tag o">Employment Hero</span><span class="tag o">Deputy</span><span class="tag o">Cin7</span><span class="tag o">HubSpot</span>
+          <span class="tag o">Excel &middot; PivotTables, XLOOKUP, SUMIFS</span><span class="tag o">Google Sheets</span><span class="tag">Claude Code &amp; AI tools</span>
+        </div>
+      </div>
+      <div class="panel rv"><h3>Entities &amp; industries</h3>
+        <div class="tags">
+          <span class="tag">Individuals &amp; sole traders</span><span class="tag">Companies</span><span class="tag">Trusts &amp; unit trusts</span><span class="tag">Partnerships</span>
+          <span class="tag o">Manufacturing</span><span class="tag o">Retail</span><span class="tag o">Restaurants &amp; cafes</span><span class="tag o">Transport &amp; construction</span><span class="tag o">Healthcare</span><span class="tag o">Professional services</span>
+        </div>
+      </div>
+      <div class="panel rv"><h3>Tax &amp; compliance</h3>
+        <div class="tags">
+          <span class="tag">BAS / IAS</span><span class="tag">ITR / TTR / CTR</span><span class="tag">FBT</span><span class="tag">Division 7A</span><span class="tag">CGT</span>
+          <span class="tag o">Superannuation</span><span class="tag o">STP Phase 2</span><span class="tag o">Fuel tax credits</span><span class="tag o">Medicare levy</span><span class="tag o">Australia &middot; UK &middot; KSA indirect tax</span>
+        </div>
+      </div>
+      <div class="panel rv"><h3>Analysis &amp; reporting</h3>
+        <div class="tags">
+          <span class="tag">Financial modelling</span><span class="tag">Budgeting &amp; forecasting</span><span class="tag">Variance analysis</span><span class="tag">Cash flow forecasts</span>
+          <span class="tag o">KPI dashboards</span><span class="tag o">Cost, margin &amp; ROI</span><span class="tag o">Feasibility studies</span><span class="tag o">Management reporting</span><span class="tag o">SOP design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="padding-top:24px">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">How I work</div>
+      <h2>A five-day close you can set your watch by.</h2>
+      <p class="sub">A repeatable month-end routine keeps owners informed and accountants out of last-minute scrambles.</p>
+    </div>
+    <div class="steps rv">
+      <div class="step"><div class="d">Day 1</div><p>Bank and card accounts reconciled; receipts inbox cleared.</p></div>
+      <div class="step"><div class="d">Day 2</div><p>Bills, invoices and payroll journals posted; accruals listed.</p></div>
+      <div class="step"><div class="d">Day 3</div><p>Balance sheet reconciled: GST, PAYG, super, wages clearing, loans.</p></div>
+      <div class="step"><div class="d">Day 4</div><p>P&amp;L reviewed against prior periods; client queries sent in one list.</p></div>
+      <div class="step"><div class="d">Day 5</div><p>Management reports and cash flow issued; period locked.</p></div>
+    </div>
+    <p class="note rv">Timing is adjusted to each client's volume and deadlines. I prepare the work; lodgment and representation remain with the client's registered tax agent. I sign a confidentiality agreement before access is granted and use two-factor authentication.</p>
+  </div>
+</section>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">Qualifications</div>
+      <h2>Credentials that back the work.</h2>
+    </div>
+    <div class="creds rv">
+      <div class="cred"><b>ACCA</b><span>Finalist &mdash; 7 of 13 exams passed (2025 &ndash; present)</span></div>
+      <div class="cred"><b>CA-Intermediate</b><span>ICAP &mdash; 6 of 8 papers passed</span></div>
+      <div class="cred"><b>Xero &amp; QuickBooks</b><span>Xero Online certified &middot; QuickBooks Online Certified ProAdvisor</span></div>
+      <div class="cred"><b>More</b><span>KSA Taxation &middot; MS Office Certified &middot; Presentation &amp; Communication</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow rv">Contact</div>
+    <h2 class="rv">Let's take the busywork off your plate.</h2>
+    <p class="sub rv">Whether you're an Australian accounting firm needing reliable offshore support, or a business that wants its books, payroll and reporting automated &mdash; tell me what you need.</p>
+    <div class="cta rv">
+      <a class="btn" href="mailto:afaiz14508@gmail.com">Email me</a>
+      <button class="btn ghost" id="copyEmail" type="button">Copy email</button>
+      <a class="btn ghost" href="https://wa.me/923366224233" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="meta rv">
+      <a href="https://www.linkedin.com/in/abdullah-faiz-3761452a9" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://contra.com/abdullah_faiz_bfn3ov53" target="_blank" rel="noopener">Contra</a>
+      <span>+92 336 6224233</span>
+      <span>Faisalabad, Pakistan &middot; Remote</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> Abdullah Faiz</span>
+    <span>English (professional) &middot; Urdu (native) &middot; References on request</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  var t=document.getElementById('toast'),tm;
+  function toast(m){t.textContent=m;t.classList.add('on');clearTimeout(tm);tm=setTimeout(function(){t.classList.remove('on')},2000)}
+  function copy(text,msg){
+    function fb(){var a=document.createElement('textarea');a.value=text;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);toast(msg)}
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){toast(msg)},fb)}else fb();
+  }
+  document.getElementById('copyLink').onclick=function(){copy(location.href.split('#')[0],'Link copied to clipboard')};
+  document.getElementById('copyEmail').onclick=function(){copy('afaiz14508@gmail.com','Email copied to clipboard')};
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+  }else els.forEach(function(e){e.classList.add('in')});
+})();
+</script>
+</body>
+</html>
