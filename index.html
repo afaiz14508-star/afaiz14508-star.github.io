@@ -3,31 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abdullah Faiz — Accountant, Tax &amp; Finance Automation</title>
+<title>Abdullah Faiz - Accountant, Tax &amp; Finance Automation</title>
 <meta name="description" content="Accountant and finance professional with 3 years' experience in Australian bookkeeping, BAS and tax return preparation, plus AI-driven automation, dashboards and CRM builds. ACCA finalist. Available for remote work.">
-<meta property="og:title" content="Abdullah Faiz — Accountant, Tax & Finance Automation">
+<meta property="og:title" content="Abdullah Faiz - Accountant, Tax & Finance Automation">
 <meta property="og:description" content="Clean books, compliant returns and automated finance workflows for Australian businesses and accounting firms.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0f3d2e">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f3d2e'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' text-anchor='middle' fill='%23f4efe6'%3EAF%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#080d1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f8cff'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' text-anchor='middle' fill='%23ffffff'%3EAF%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#faf8f4; --surface:#ffffff; --ink:#16201b; --muted:#5d6a63; --line:#e6e1d6;
-  --accent:#0f3d2e; --accent-2:#b4893b; --accent-soft:#e8f0eb; --on-accent:#faf8f4;
+  --bg:#080d1a; --surface:#0f1730; --ink:#e8eefc; --muted:#8fa0c4; --line:#1c2a4d;
+  --accent:#4f8cff; --accent-2:#5fd0ff; --accent-soft:#122350; --on-accent:#ffffff;
   --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#0e1411; --surface:#151d19; --ink:#ece8df; --muted:#9aa89f; --line:#25312b;
-    --accent:#7fc4a2; --accent-2:#d4ad62; --accent-soft:#17251f; --on-accent:#0e1411;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0e1411; --surface:#151d19; --ink:#ece8df; --muted:#9aa89f; --line:#25312b;
-  --accent:#7fc4a2; --accent-2:#d4ad62; --accent-soft:#17251f; --on-accent:#0e1411;
+  color-scheme:dark;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -38,24 +29,25 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.015em;line-he
 .eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2);margin-bottom:14px}
 
 /* nav */
-nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{position:sticky;top:0;z-index:20;background:rgba(8,13,26,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
 .logo{font-family:var(--serif);font-size:19px;font-weight:600;text-decoration:none}
 .links{display:flex;gap:26px;align-items:center;font-size:14px}
 .links a{text-decoration:none;color:var(--muted);transition:color .15s}
 .links a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;gap:8px;font:500 14px var(--sans);padding:11px 20px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);color:var(--on-accent);text-decoration:none;cursor:pointer;transition:transform .15s,opacity .15s}
+.btn{box-shadow:0 6px 24px -8px rgba(79,140,255,.6);display:inline-flex;align-items:center;gap:8px;font:500 14px var(--sans);padding:11px 20px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);color:var(--on-accent);text-decoration:none;cursor:pointer;transition:transform .15s,opacity .15s}
 .btn:hover{opacity:.9;transform:translateY(-1px)}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost{box-shadow:none;background:transparent;color:var(--ink);border-color:var(--line)}
 .btn.ghost:hover{border-color:var(--ink)}
 .btn.sm{padding:8px 16px}
 .links .btn:not(.ghost){color:var(--on-accent)}
 .links .btn.ghost{color:var(--ink)}
 
 /* hero */
-.hero{padding:96px 0 72px}
+.hero{padding:96px 0 72px;position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(900px 500px at 15% -5%,rgba(79,140,255,.18),transparent 60%),radial-gradient(700px 420px at 100% 10%,rgba(95,208,255,.10),transparent 60%)}
 .hero h1{font-size:clamp(40px,7vw,76px);max-width:15ch}
-.hero h1 em{font-style:italic;color:var(--accent)}
+.hero h1 em{font-style:italic;background:linear-gradient(90deg,#5fd0ff,#4f8cff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:60ch;margin:26px 0 34px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 .avail{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);margin-bottom:28px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
@@ -66,7 +58,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stat{padding:30px 24px 30px 0}
 .stat+.stat{padding-left:24px;border-left:1px solid var(--line)}
-.stat b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(30px,4vw,44px);color:var(--accent);line-height:1}
+.stat b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(30px,4vw,44px);color:var(--accent-2);line-height:1}
 .stat span{display:block;margin-top:10px;font-size:13px;color:var(--muted)}
 
 section{padding:88px 0}
@@ -75,11 +67,11 @@ section h2{font-size:clamp(30px,4.2vw,44px);max-width:22ch}
 .head{margin-bottom:48px}
 
 /* AI */
-.ai{background:var(--accent);color:var(--on-accent);border-radius:28px;padding:64px 56px;margin:0}
+.ai{background:linear-gradient(135deg,#17389a 0%,#0e2257 55%,#0b1a42 100%);border:1px solid #27428a;color:var(--on-accent);border-radius:28px;padding:64px 56px;margin:0}
 .ai .eyebrow{color:var(--accent-2)}
 .ai .sub{color:color-mix(in srgb,var(--on-accent) 78%,transparent)}
 .ai-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:44px;background:color-mix(in srgb,var(--on-accent) 18%,transparent);border-radius:16px;overflow:hidden}
-.ai-item{background:var(--accent);padding:28px}
+.ai-item{background:#0f2459;padding:28px}
 .ai-item h3{font-size:21px;margin-bottom:8px}
 .ai-item p{font-size:15px;color:color-mix(in srgb,var(--on-accent) 78%,transparent)}
 .ai-item .n{font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--accent-2);margin-bottom:12px;display:block}
@@ -97,7 +89,7 @@ section h2{font-size:clamp(30px,4.2vw,44px);max-width:22ch}
 .when{font-size:13px;color:var(--muted)}
 .when b{display:block;color:var(--ink);font-weight:500;font-size:14px;margin-bottom:2px}
 .job h3{font-size:23px}
-.org{color:var(--accent);font-size:14.5px;margin:4px 0 16px}
+.org{color:var(--accent-2);font-size:14.5px;margin:4px 0 16px}
 .job ul{list-style:none;display:grid;gap:10px}
 .job li{position:relative;padding-left:20px;font-size:15px;color:var(--muted)}
 .job li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--accent-2)}
@@ -107,7 +99,7 @@ section h2{font-size:clamp(30px,4.2vw,44px);max-width:22ch}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:32px}
 .panel h3{font-size:21px;margin-bottom:16px}
 .tags{display:flex;flex-wrap:wrap;gap:8px}
-.tag{font-size:13px;padding:6px 13px;border-radius:999px;background:var(--accent-soft);color:var(--accent);border:1px solid transparent}
+.tag{font-size:13px;padding:6px 13px;border-radius:999px;background:var(--accent-soft);color:#a9c8ff;border:1px solid transparent}
 .tag.o{background:transparent;border-color:var(--line);color:var(--muted)}
 
 /* process */
@@ -120,9 +112,43 @@ section h2{font-size:clamp(30px,4.2vw,44px);max-width:22ch}
 
 /* credentials */
 .creds{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.cred{padding:24px 0;border-top:1px solid var(--ink)}
+.cred{padding:24px 0;border-top:1px solid var(--accent)}
 .cred b{display:block;font-family:var(--serif);font-weight:500;font-size:19px;margin-bottom:6px}
 .cred span{font-size:14px;color:var(--muted)}
+
+
+/* case studies */
+.case{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-bottom:72px}
+.case-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.case h3{font-size:clamp(24px,3vw,32px)}
+.case .tagline{color:var(--accent-2);font-size:14px;margin:6px 0 14px}
+.case p{color:var(--muted);font-size:15.5px}
+.pts{list-style:none;display:grid;gap:10px}
+.pts li{position:relative;padding-left:22px;font-size:15px;color:var(--muted)}
+.pts li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:2px;background:var(--accent)}
+.pts b{color:var(--ink);font-weight:500}
+.shots{display:grid;gap:20px}
+.shot{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.shot img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
+.shot figcaption{font-size:13px;color:var(--muted);padding:12px 6px 4px}
+.chrome{display:flex;gap:6px;padding:4px 6px 12px}
+.chrome i{width:10px;height:10px;border-radius:50%;background:#26365f}
+.tbl-wrap{overflow-x:auto}
+table.trk{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
+.trk th{text-align:left;font-weight:600;color:#fff;background:#17389a;padding:11px 12px;white-space:nowrap}
+.trk td{padding:11px 12px;border-bottom:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.trk td:first-child{color:var(--ink);font-weight:500}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:500}
+.p-done{background:rgba(47,163,107,.18);color:#6fe3a8}
+.p-prog{background:rgba(79,140,255,.2);color:#9cc0ff}
+.p-start{background:rgba(95,208,255,.16);color:#8fe0ff}
+.p-prob{background:rgba(255,99,99,.16);color:#ff9a9a}
+.p-wait{background:rgba(143,160,196,.16);color:#b6c3e0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:6px 0 22px}
+.kpi{background:#0b1229;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi b{display:block;font-family:var(--serif);font-weight:500;font-size:26px;color:var(--accent-2);line-height:1.1}
+.kpi span{font-size:12px;color:var(--muted)}
+@media (max-width:860px){.case-head{grid-template-columns:minmax(0,1fr);gap:20px}.kpis{grid-template-columns:repeat(2,1fr)}}
 
 /* contact */
 .contact{text-align:center;padding:110px 0}
@@ -135,7 +161,7 @@ section h2{font-size:clamp(30px,4.2vw,44px);max-width:22ch}
 footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
-.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:50}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:#e8eefc;color:#080d1a;padding:11px 20px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:50}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 
 .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
@@ -154,7 +180,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .ai{padding:40px 24px;border-radius:20px}
   section{padding:64px 0}.hero{padding:64px 0 48px}
 }
-@media print{nav,.toast,.cta{display:none}.rv{opacity:1;transform:none}}
+@media print{body::before{display:none}nav,.toast,.cta{display:none}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -164,6 +190,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <a href="#top" class="logo">Abdullah Faiz</a>
     <div class="links">
       <a href="#ai">AI &amp; Automation</a>
+      <a href="#work">Work</a>
       <a href="#services">Services</a>
       <a href="#experience">Experience</a>
       <a href="#expertise">Expertise</a>
@@ -177,7 +204,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <header class="hero wrap">
   <div class="avail rv"><span class="dot"></span> Available for remote engagements</div>
   <h1 class="rv">Clean books. Compliant returns. <em>Smarter</em> finance.</h1>
-  <p class="lead rv">I'm an accountant with three years' experience supporting Australian businesses and accounting firms &mdash; from bookkeeping and payroll to BAS and tax return preparation &mdash; and I use AI to automate the repetitive work, build live dashboards and connect your CRM to your numbers.</p>
+  <p class="lead rv">I'm an accountant with three years' experience supporting Australian businesses and accounting firms - from bookkeeping and payroll to BAS and tax return preparation - and I use AI to automate the repetitive work, build live dashboards and connect your CRM to your numbers.</p>
   <div class="cta rv">
     <a class="btn" href="#contact">Work with me</a>
     <a class="btn ghost" href="#experience">See my experience</a>
@@ -189,7 +216,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="stat"><b>3 yrs</b><span>Accounting &amp; compliance for Australian clients</span></div>
     <div class="stat"><b>60+</b><span>Client files managed across entity types</span></div>
     <div class="stat"><b>95%+</b><span>Tax computation accuracy</span></div>
-    <div class="stat"><b>2&ndash;2.5%</b><span>Deviation on monthly financial summaries</span></div>
+    <div class="stat"><b>2-2.5%</b><span>Deviation on monthly financial summaries</span></div>
   </div>
 </div>
 
@@ -198,13 +225,83 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="ai rv">
       <div class="eyebrow">What sets me apart</div>
       <h2>Accounting expertise, multiplied by AI.</h2>
-      <p class="sub">I don't just use the software &mdash; I build the systems around it. AI tools, including Claude Code, help me remove manual work, catch errors earlier and give owners numbers they can act on.</p>
+      <p class="sub">I don't just use the software - I build the systems around it. AI tools, including Claude Code, help me remove manual work, catch errors earlier and give owners numbers they can act on.</p>
       <div class="ai-grid">
-        <div class="ai-item"><span class="n">01</span><h3>AI in accounting &amp; finance</h3><p>AI-assisted transaction coding, reconciliation checks, variance commentary and reporting &mdash; faster turnaround with a human review on every output.</p></div>
+        <div class="ai-item"><span class="n">01</span><h3>AI in accounting &amp; finance</h3><p>AI-assisted transaction coding, reconciliation checks, variance commentary and reporting - faster turnaround with a human review on every output.</p></div>
         <div class="ai-item"><span class="n">02</span><h3>CRM creation &amp; integration</h3><p>Setting up and connecting CRM and inventory platforms such as HubSpot and Cin7 so payments, stock and client activity flow into the ledger.</p></div>
         <div class="ai-item"><span class="n">03</span><h3>Dashboards &amp; KPI reporting</h3><p>Management dashboards and KPI packs in Excel and Google Sheets that surface cost-reduction opportunities and show performance at a glance.</p></div>
-        <div class="ai-item"><span class="n">04</span><h3>Workflow automation</h3><p>Automating recurring finance tasks &mdash; data capture, bank and supplier rules, checklists, report generation &mdash; and documenting them as repeatable SOPs.</p></div>
+        <div class="ai-item"><span class="n">04</span><h3>Workflow automation</h3><p>Automating recurring finance tasks - data capture, bank and supplier rules, checklists, report generation - and documenting them as repeatable SOPs.</p></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="padding-top:24px">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">Selected work</div>
+      <h2>Dashboards and a CRM, built for a real business.</h2>
+      <p class="sub">Two systems I designed and built for a made-to-order fashion business: a reporting dashboard that shows which collections make money, and a job-tracking CRM that shows who is working on what. Client and staff details are removed.</p>
+    </div>
+
+    <div class="case">
+      <div class="case-head rv">
+        <div>
+          <div class="eyebrow">Case study 01 &middot; Dashboard</div>
+          <h3>Collection profitability dashboard</h3>
+          <div class="tagline">Formula-driven reporting in Excel and Google Sheets</div>
+          <p>Sales, material costs and production were scattered across files. I consolidated them into one live report that answers the questions that matter: what sold, what it cost, what it earned and what is still in the pipeline.</p>
+        </div>
+        <ul class="pts">
+          <li><b>Rs 15.06M sales</b> against Rs 3.90M material cost, a <b>74.1% gross margin</b> across 258 delivered units.</li>
+          <li>Margin by collection ranges from <b>54.4% to 78.9%</b>, showing where pricing and fabric costs need attention.</li>
+          <li><b>68 units in progress</b> worth Rs 3.78M, so upcoming revenue is visible before it is invoiced.</li>
+          <li>Monthly sales trend by collection reveals seasonal peaks around Eid and winter.</li>
+        </ul>
+      </div>
+      <div class="shots">
+        <figure class="shot rv"><img src="assets/dashboard-summary.png" alt="Collection summary table showing units delivered, sales, material cost, gross profit, margin and in-progress value, with a sales versus material cost chart" loading="lazy"><figcaption>Collection summary: units, sales, material cost, gross profit, margin and pipeline value.</figcaption></figure>
+        <figure class="shot rv"><img src="assets/dashboard-trend.png" alt="Line chart of monthly sales trend by collection" loading="lazy"><figcaption>Monthly sales trend by collection, used to plan production ahead of peak seasons.</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-head rv">
+        <div>
+          <div class="eyebrow">Case study 02 &middot; CRM</div>
+          <h3>Job tracker CRM</h3>
+          <div class="tagline">Orders, staff and deadlines in one system</div>
+          <p>A lightweight CRM that follows every order from enquiry to delivery. It replaces chasing people for updates with a single view of status, workload and time against estimate.</p>
+        </div>
+        <ul class="pts">
+          <li><b>One row per order</b> with customer, product, priority, assigned staff member and estimated hours.</li>
+          <li><b>Automatic timing:</b> time elapsed, total time and variance against the estimate are calculated for each job.</li>
+          <li><b>On-track flag</b> and status (not started, started, in progress, problem, completed) so delays surface early.</li>
+          <li><b>Staff register and change log</b> for hires, leave and exits, plus a live KPI dashboard of open jobs per person.</li>
+        </ul>
+      </div>
+      <figure class="shot rv">
+        <div class="chrome"><i></i><i></i><i></i></div>
+        <div class="kpis">
+          <div class="kpi"><b>4</b><span>Open jobs</span></div>
+          <div class="kpi"><b>1</b><span>Completed</span></div>
+          <div class="kpi"><b>1</b><span>Needs attention</span></div>
+          <div class="kpi"><b>3</b><span>Staff assigned</span></div>
+        </div>
+        <div class="tbl-wrap">
+        <table class="trk">
+          <thead><tr><th>Job ID</th><th>Order date</th><th>Product</th><th>Assigned to</th><th>Priority</th><th>Est. hrs</th><th>Status</th><th>On track?</th></tr></thead>
+          <tbody>
+            <tr><td>JOB-0001</td><td>01 Aug</td><td>Bridal gown, hand-beaded</td><td>Staff 1</td><td>High</td><td>40</td><td><span class="pill p-done">Completed</span></td><td>Yes</td></tr>
+            <tr><td>JOB-0002</td><td>05 Aug</td><td>Bridesmaid dresses x6</td><td>Staff 2</td><td>Medium</td><td>30</td><td><span class="pill p-prog">In progress</span></td><td>Yes</td></tr>
+            <tr><td>JOB-0003</td><td>10 Aug</td><td>Evening gown, custom fit</td><td>Staff 3</td><td>Medium</td><td>18</td><td><span class="pill p-start">Started</span></td><td>Yes</td></tr>
+            <tr><td>JOB-0004</td><td>12 Aug</td><td>Formal gala dress</td><td>Staff 1</td><td>Rush</td><td>15</td><td><span class="pill p-prob">Problem</span></td><td>At risk</td></tr>
+            <tr><td>JOB-0005</td><td>14 Aug</td><td>Cocktail dress</td><td>Staff 2</td><td>Low</td><td>10</td><td><span class="pill p-wait">Not started</span></td><td>-</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <figcaption>Illustrative view of the tracker with sample data. Customer and employee names are removed.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -222,7 +319,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <div class="card rv"><h3>BAS, IAS &amp; tax returns</h3><p>Activity statements and ITR, TTR and CTR returns prepared with full workpapers for the registered agent's review.</p></div>
       <div class="card rv"><h3>Tax workings</h3><p>FBT, Division 7A, CGT, fuel tax credits, trust distributions, director's loans and Medicare levy.</p></div>
       <div class="card rv"><h3>Clean-up &amp; catch-up</h3><p>Clearing months of unreconciled transactions, duplicates, suspense balances and GST miscoding.</p></div>
-      <div class="card rv"><h3>Reporting, cash flow &amp; automation</h3><p>P&amp;L and balance sheet commentary, cash flow forecasts, dashboards, financial models and AI-driven workflows.</p></div>
+      <div class="card rv"><h3>Dashboards, CRM &amp; automation</h3><p>P&amp;L and balance sheet commentary, cash flow forecasts, dashboards, financial models and AI-driven workflows.</p></div>
     </div>
   </div>
 </section>
@@ -235,13 +332,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     </div>
 
     <div class="job rv">
-      <div class="when"><b>2026 &ndash; Present</b>Remote &middot; Australian clients</div>
+      <div class="when"><b>2026 - Present</b>Remote &middot; Australian clients</div>
       <div>
         <h3>Independent Accountant &amp; Bookkeeper</h3>
         <div class="org">Freelance &middot; Self-employed</div>
         <ul>
           <li>Working independently with Australian clients, finding and winning new engagements through LinkedIn.</li>
-          <li>Cleaning up Xero and QuickBooks Online files &mdash; clearing backlogs, fixing GST coding and correcting misallocations.</li>
+          <li>Cleaning up Xero and QuickBooks Online files - clearing backlogs, fixing GST coding and correcting misallocations.</li>
           <li>Setting up and restructuring charts of accounts to suit each business.</li>
           <li>Preparing monthly financial reports and BAS from reconciled ledgers, ready for the registered agent's review and lodgment.</li>
         </ul>
@@ -249,7 +346,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     </div>
 
     <div class="job rv">
-      <div class="when"><b>May 2025 &ndash; May 2026</b>Faisalabad, Pakistan</div>
+      <div class="when"><b>May 2025 - May 2026</b>Faisalabad, Pakistan</div>
       <div>
         <h3>Tax Accountant</h3>
         <div class="org">Premier Outsourcings SMC (Pvt) Ltd</div>
@@ -264,13 +361,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     </div>
 
     <div class="job rv">
-      <div class="when"><b>Apr 2024 &ndash; Feb 2025</b>Australia / Pakistan</div>
+      <div class="when"><b>Apr 2024 - Feb 2025</b>Australia / Pakistan</div>
       <div>
         <h3>Finance Officer</h3>
         <div class="org">Opsteam Pvt Ltd (Australia) &middot; Avantduo Technology Services Pvt Ltd</div>
         <ul>
           <li>Ran bookkeeping, invoice processing and reconciliations for a 60+ entity portfolio in Xero, Dext, MYOB and Excel.</li>
-          <li>Produced monthly financial summaries within 2&ndash;2.5% deviation; variance analysis led to reduced operating expenses and happier clients.</li>
+          <li>Produced monthly financial summaries within 2-2.5% deviation; variance analysis led to reduced operating expenses and happier clients.</li>
           <li>Built financial dashboards and KPI reports giving leadership clear visibility of performance across the portfolio.</li>
           <li>Processed weekly, fortnightly and monthly payroll for 60+ client employees, reducing payroll errors.</li>
           <li>Integrated HubSpot, Cin7 and Coles Portal for payment tracking and inventory oversight; primary contact for client and leadership queries.</li>
@@ -352,7 +449,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <div class="wrap">
     <div class="eyebrow rv">Contact</div>
     <h2 class="rv">Let's take the busywork off your plate.</h2>
-    <p class="sub rv">Whether you're an Australian accounting firm needing reliable offshore support, or a business that wants its books, payroll and reporting automated &mdash; tell me what you need.</p>
+    <p class="sub rv">Whether you're an Australian accounting firm needing reliable offshore support, or a business that wants its books, payroll and reporting automated - tell me what you need.</p>
     <div class="cta rv">
       <a class="btn" href="mailto:afaiz14508@gmail.com">Email me</a>
       <button class="btn ghost" id="copyEmail" type="button">Copy email</button>
