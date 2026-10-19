@@ -59,13 +59,10 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-grad
 .mono{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#4f8cff,#5fd0ff);color:#06122e;font:800 13px var(--serif);letter-spacing:.02em}
 .sig{font-family:var(--serif);font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--ink)}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:center}
-.portrait{position:relative;justify-self:end;width:100%;max-width:400px}
-.portrait::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border:1px solid var(--accent);border-radius:28px;opacity:.5}
-.portrait::after{content:"";position:absolute;inset:auto -40px -40px auto;width:220px;height:220px;background:radial-gradient(circle,rgba(79,140,255,.35),transparent 70%);z-index:-1}
-.portrait img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;border-radius:24px;box-shadow:0 30px 70px -25px rgba(0,0,0,.8)}
-.portrait figcaption{position:absolute;left:14px;right:14px;bottom:14px;padding:12px 16px;border-radius:14px;background:rgba(8,13,26,.72);backdrop-filter:blur(8px);border:1px solid var(--line);display:grid;gap:1px}
-.portrait figcaption b{font:700 15px var(--serif)}
-.portrait figcaption span{font-size:13px;color:var(--muted)}
+.portrait{position:relative;justify-self:center;width:100%;max-width:300px;margin:0}
+.portrait::before{content:"";position:absolute;left:50%;top:14%;width:92%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(79,140,255,.38),rgba(79,140,255,0) 68%);z-index:0}
+.portrait::after{content:"";position:absolute;left:8%;right:8%;bottom:-6px;height:26px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(0,0,0,.7),transparent 70%);filter:blur(6px);z-index:0}
+.portrait img{position:relative;z-index:1;display:block;width:100%;height:auto;filter:drop-shadow(0 18px 22px rgba(0,0,0,.55)) drop-shadow(0 4px 6px rgba(0,0,0,.4));-webkit-mask-image:linear-gradient(to bottom,#000 88%,transparent 100%);mask-image:linear-gradient(to bottom,#000 88%,transparent 100%)}
 @media (max-width:860px){.hero-grid{grid-template-columns:minmax(0,1fr);gap:40px}.portrait{justify-self:start;max-width:320px}.sig{font-size:17px}}
 
 /* stats */
@@ -227,7 +224,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <a class="btn ghost" href="#experience">See my experience</a>
   </div>
   </div>
-  <figure class="portrait rv"><img src="assets/abdullah-faiz.jpg" alt="Portrait of Abdullah Faiz" width="900" height="900"><figcaption><b>Abdullah Faiz</b><span>Accountant &middot; Bookkeeper &middot; ACCA finalist</span></figcaption></figure>
+  <figure class="portrait rv"><img src="assets/abdullah-faiz-cutout.png" alt="Portrait of Abdullah Faiz" width="700" height="644"></figure>
   </div>
 </header>
 
